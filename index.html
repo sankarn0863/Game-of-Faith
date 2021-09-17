@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Demon</title>
+</head>
+<body>
+    <img src="./gof.gif" alt="logo">
+    <h1 id="exorcism">DEMON IS HERE !</h1>
+    <p id="dead">All father in heaven holy be your name your kingdom come....Start?</p>
+    <div class="btn">
+    <button onclick="church()" id="green" class="btn1">PRAY</button>
+    <button onclick="grave()" id="red" class="btn2">DENY</button>
+    </div>
+    <button onclick="history.go(0);" id="reset" class="btn3">RESET</button>
+</body>
+<script>
+    function church(){
+      document.getElementById("exorcism").innerHTML = "...You are saved";
+      document.getElementById("dead").style.visibility = "hidden";
+      document.getElementById("green").style.visibility = "hidden";
+      document.getElementById("red").style.visibility = "hidden";
+      document.getElementById("reset").style.visibility = "visible";
+    }
+    function grave(){
+        document.getElementById("exorcism").innerHTML = "....Game Over....";
+        document.getElementById("dead").style.visibility = "hidden";
+        document.getElementById("red").style.visibility = "hidden";
+        document.getElementById("green").style.visibility = "hidden";
+        document.getElementById("reset").style.visibility = "visible";
+    }
+</script>
+
+<style>
+    img{
+        height: 300px;
+        width: auto;
+        margin-left: 16cm ;
+        margin-top: 2cm;
+    }
+h1{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 16cm;
+    }
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 13cm;
+}
+
+.btn{
+    margin-left: 16cm;
+}
+
+button.btn1{
+    border-radius: 13px;
+    border-inline-width: 1cm;
+    border-color: rgb(50, 182, 205);
+    background-color: rgb(35, 153, 173);
+    font-size: 15px;
+}
+button.btn2{
+    border-radius: 13px;
+    border-inline-width: 1cm;
+    border-color: rgb(205, 50, 50);
+    background-color: rgb(173, 35, 35);
+    font-size: 15px;
+}
+
+button.btn3{
+    visibility:hidden;
+    position: fixed;
+    margin-left: 17cm;
+    border-radius: 13px;
+    border-inline-width: 1cm;
+    border-color: rgb(205, 202, 50);
+    background-color: rgb(171, 173, 35);
+    font-size: 15px;
+}
+</style>
